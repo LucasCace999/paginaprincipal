@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    
+}
+
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+    /* 02 */
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    /* 028 */
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c6ec 47%, #46adf7 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.head .titulo{
+    font-weight: bolder;
+}
+
+.head .copy{
+    font-weight: bold;
+}
+
+.title{
+    text-align: center;
+    margin: 30px;
+}
+
+main{
+    text-align: center;
+}
+
+.title{
+    color: #764ba2;
+}
+
+/* cards */
+
+.card{
+    width: 180px;
+    height: 260px;
+    border: 2px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+}
+
+.card:hover{
+    background-color: #764ba218;
+
+}
+
+.cards{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.button{
+    padding: 10px;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ig:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.fb:hover{
+    background-color: #4267B2;
+    color: white;
+}
+
+.wa:hover{
+    background-color: #25d366;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 10px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.contact-us{
+    width: 30%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 50;
+    font-size: 24px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        width: 95%;
+        margin: auto;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin: 25px;
+        margin: auto;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .contact-us p{
+        text-align: center;
+    }
+}

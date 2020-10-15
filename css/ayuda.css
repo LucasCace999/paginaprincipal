@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.boton{
+    margin: auto;
+    margin-top: 50px;
+    border:2px solid;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.boton:hover{
+    background: rgb(144, 0, 254);
+    border-color: rgb(144, 0, 254);
+    color: white;
+    transition: 0.3s;
+}
+
+.boton p{
+    text-align: center;
+    margin: auto;
+    padding: 6px;
+}

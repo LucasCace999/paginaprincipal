@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 30px 0;
+}
+
+body{
+    background-image: linear-gradient(315deg, #b4becc 0%, #d4c3c6 74%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    height: 100vh;
+    background-image:url(../img/portada-experiencias.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+    /* 02 */
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    /* 028 */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.blur{
+    color: black;
+    padding: 30px;
+    /* backdrop-filter: blur(2px); */
+}
+
+.head .titulo{
+    font-weight: bolder;
+}
+
+.head .copy{
+    font-weight: bold;
+}
+
+.title{
+    color:  #101357;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.zoom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.duo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.skype{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.meet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+/* cards */
+.card{
+
+    border: 2px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+}
+
+.card h3{
+    color: #101357;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    
+}
+
+.card h4{
+    padding: 5px;
+}
+
+.card p{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.name{
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+/* footer */
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 10px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.contact-us{
+    width: 30%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 50;
+    font-size: 24px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
+}
+
+@media screen and (max-width:800px){
+    .zoom{
+        grid-template-columns: 1fr;
+        
+    }
+    .zoom .card{
+        width: auto;
+        height: auto;
+    }
+
+    .duo{
+        grid-template-columns: 1fr;
+        
+    }
+    .duo .card{
+        width: auto;
+        height: auto;
+    }
+
+    .skype{
+        grid-template-columns: 1fr;
+        
+    }
+    .skype .card{
+        width: auto;
+        height: auto;
+    }
+
+    .meet{
+        grid-template-columns: 1fr;
+        
+    }
+    .meet .card{
+        width: auto;
+        height: auto;
+    }
+    
+    
+
+    
+
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .contact-us p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        height: 250px;
+        font-size: 12px;
+    }
+
+    .card h3{
+        font-size: 15px;
+    }
+    
+}

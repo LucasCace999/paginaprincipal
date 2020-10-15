@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.contenedor .info{
+    vertical-align: middle;
+}
+
+
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-zoom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    
+}
+
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
+    /* 02 */
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    /* 028 */
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46adf7 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.head .titulo{
+    font-weight: bolder;
+}
+
+.head .copy{
+    font-weight: bold;
+}
+
+.contenedor .caracteristicas{
+    background-color: rgb(245, 240, 240);
+}
+
+.ventajas-desventajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    gap: 2rem;
+}
+
+.ventajas .desventajas{
+    border: 1px;
+}
+
+.card1{
+    border: 1px;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    background-color: #eff4f8;
+}
+
+.ventajas-desventajas ul{
+    list-style: none;
+}
+
+#ventajas{
+    color: rgb(126, 161, 54);
+}
+
+#desventajas{
+    color: rgb(161, 54, 54);
+}
+
+/* cards */
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-content: center;
+    align-items: center; */
+}
+.card img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.card p{
+    border-top: 2px solid;
+    margin-top: 3px;
+}
+.card{
+    background-color: #e6ebf0;
+    /* color: white; */
+    text-align: center;
+    border: 1px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+/* titulos */
+h3{
+    color: #2e9ffb;
+    text-align: center;
+}
+.contenedor h3{
+    color: #2e9ffb;
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.title{
+    color: #2e9ffb;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    
+}
+
+.licencias span{
+    color:#2e9ffb ;
+}
+
+li{
+    margin: 30px;
+}
+
+
+/* images */
+#zoom1{
+    width: 350px;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+#zoom2{
+    width: 350px;
+    
+}
+.como-usar{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.como-usar li{
+    background-color: #2e9ffb;
+    color: white;
+    padding: 5px;
+    border: 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+.como-usar img{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Footer */
+footer{
+    background: #2e9ffb;
+    padding-bottom: 10px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.contact-us{
+    width: 30%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 50;
+    font-size: 24px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#1b3b90;
+}
+
+.contenedor p{
+    font-size: 12px;
+}
+
+.contenedor li{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 800px){
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .contact-us p{
+        text-align: center;
+    }
+
+    
+
+    .cards{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        
+        
+    }
+    .card{
+        margin: auto;
+    }
+    .ventajas-desventajas{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #zoom1{
+        float: none;
+    }
+
+}
